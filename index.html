@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Formulario de login | Alto rendimiento</title>
+    <link rel="stylesheet" href="estilos.css">
+  </head>
+  <body>
+    <div class="login-box">
+      <img src="img/logo.png" class="logo" alt="deportista">
+      <h1>Entrar AQUI</h1>
+      <form action="captura.php" method="POST" >
+        <!-- para cambiar la peticion de post a get solamente modificamos el metodo por la
+        peticion que dessemos por ejemplo method="GET"  y se cambia la solicitud en automatico
+        no es necesario hacer cambios en el archivo php (cpatura.php) pues cuenta con el metodo
+        REQUEST que actualiza  en actomatico -->
+        <!-- caja de texto USERNAME INPUT  -->
+        <label for="username">Nombre_Atleta</label>
+        <input type="text" id="username" name="username" placeholder="Ingresar nombre del Atleta">
+        <!-- caja de texto PASSWORD INPUT -->
+        <label for="password">Password</label>
+        <input type="password" id="password" name="password" placeholder="Ingresar Password">
+        <input type="submit" value="Log In">
+        <a href="#">¿Olvidaste tu Password?</a><br>
+        <a href="#">¿No tienes una cuenta?</a>
+      </form>
+    </div>
+  </body>
+</html>
